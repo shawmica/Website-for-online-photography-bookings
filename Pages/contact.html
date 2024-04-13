@@ -10,6 +10,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu&display=swap" >
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../Css/footer.css">
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          
+          var form = document.getElementById('form');
+
+          form.addEventListener('submit', function(event) {
+             
+              event.preventDefault();
+
+              alert('Hey your details submitted!');
+
+              form.reset();
+          });
+      });
+    </script>
 </head>
 <body>
     
@@ -46,7 +62,7 @@
 
    
   <div class="container" >
-    <form action="index.html">
+    <form  id="form">
        <fieldset>
     <legend><span style="color:rgb(200, 0, 0);font-family:cursive; font-size:25px; ">Shawmi Photography</span></legend>
       <label style="color:#fff" for="fname" > Name:</label>
@@ -70,6 +86,9 @@
       <textarea style="color:#fff" id="subject" name="About Your Order" placeholder="Describe more about your need.." style="height:200px" required></textarea>
       
       <input type="submit" value="Submit" required>
+      
+      
+      
     </fieldset>
     </form>
   </div>
@@ -86,7 +105,10 @@
 </div>
 </section>
 
-  
+<!-- java script section.... -->
+<script src="../Js/navbar.js"></script>
+
+<!-- java script section.... -->
    <!--Footer Section Start.... -->
    <footer class="footer-distributed">
  
